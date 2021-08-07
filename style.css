@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+.banner{
+    background-image: url(../iste_summer_school/technology.gif);
+    height: 20vw;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-position: top center ;
+    background-size: 30%;
+    background-attachment: fixed;
+
+}
+header{
+    background-color:black ;
+}
+body{
+    margin: 0;
+}
+footer,nav{
+    display: flex;
+    background-color: #333 ;
+    
+    
+}
+footer .footer1,nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: cursive;
+    float: left;
+}
+.flex-align-right{
+    margin-left: auto;
+
+}
+
+.menu-btn:hover{
+    background-color: white;
+    color: black;
+
+}
+
+footer .footer2{
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+}
+
+
+
+section h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    
+    
+}
+section h2 span{
+    background-color: cadetblue;
+    padding: 10px 55px;
+    border-radius: 20px;
+}
+
+  
+  .carousel-cell {
+    width: 78%;
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    
+}
+  .carousel-cell h3{
+      
+      font: 1.4em "Fira Sans", sans-serif;
+      font-weight: 700;
+      
+  }
+
+  .ab{
+    
+    font: 22px "Fira Sans", sans-serif;
+}  
+
+.carousel button{
+
+    background-color: rgb(122, 206, 126);
+    
+}
+
+.carousel #myBtn{
+
+    background-color: rgb(219, 233, 94);
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+
+  #cell1{
+    background-image: url("img_avatar.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    color: lavender;
+    font: italic 1.6em "Fira Sans", serif;
+  }
+
+  #cell2{
+
+    background-image: url("ocean.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    color: lavender;
+    font: italic 1.6em "Fira Sans", serif;
+
+  }
+
+  #cell3{
+    background-image: url("smash-3.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    color: rgb(102, 213, 228);
+    font: italic 1.6em "Fira Sans", serif;
+  }
+
+  #cell4{
+
+    background-image: url("adc.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    color: rgb(92, 221, 146);
+    font: italic 1.6em "Fira Sans", serif;
+
+  }
+  #cell5{
+    background-image: url("sav.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    color: lavender;
+    font: italic 1.6em "Fira Sans", serif;
+  }
+
+  section form{
+      
+      font-size: 30px;
+      text-align: center;
+      margin: 40px;
+
+  }
+  section form p{
+      
+    color: white;
+    font-family:cursive;
+
+}
+   section form{
+        background-image: url("background.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 700px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size:cover; /* Resize the background image to cover the entire container */
+        margin: 60px;
+
+    }
+    
+    .abcd #title1{
+        height: 40px;
+        width: 500px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .abcd #author1{
+        height: 40px;
+        width: 500px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .abcd #date1{
+        height: 40px;
+        width: 500px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .abcd #content1{
+        height: 121px;
+        width: 500px;
+        text-decoration: none;
+        border-radius: 10px;
+        
+    }
+
+    .abcd #publish1{
+        background-color: rgba(215, 228, 102, 0.794);
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+   .container{
+    display: grid;
+    background-image: url("sample.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 500px;
+    margin: 60px;
+    text-decoration: none;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(200px,auto);
+    grid-auto-columns: minmax(200px,auto);
+   }
+   .item ul a{
+
+      text-decoration: none;
+      color: whitesmoke;
+      padding: 20px;
+      font-size: 30px;
+  }
+
+  .item ul{
+      text-decoration: none;
+      text-align: center;
+  }
+
+
+ 
+
+
+@media screen and (max-width: 700px) {
+    nav,footer{
+        flex-direction: column;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .flex-align-right{
+        margin-left: 0;
+    
+    }
+    
+}
+
+
+
