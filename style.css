@@ -1,8 +1,11 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+/*------------------------header----------------------*/
 .banner{
-    background-image: url(../iste_summer_school/technology.gif);
+    background-image: url(./image/technology.gif);
     height: 20vw;
     min-height: 100px;
     background-repeat: no-repeat;
@@ -14,16 +17,16 @@
 header{
     background-color:black ;
 }
-body{
-    margin: 0;
-}
-footer,nav{
+
+/*---------------------------------navigation bar-----------------------------*/
+
+nav{
     display: flex;
     background-color: #333 ;
     
     
 }
-footer .footer1,nav a{
+nav a{
     display: block;
     color: white;
     text-decoration: none;
@@ -33,29 +36,24 @@ footer .footer1,nav a{
 }
 .flex-align-right{
     margin-left: auto;
+    margin-right: 15px;
 
 }
 
 .menu-btn:hover{
     background-color: white;
     color: black;
+    transform: scale(1.1);
 
 }
 
-footer .footer2{
-    text-decoration: none;
-    color: white;
-    padding: 14px 20px;
-}
-
-
+/*-------------universal heading---------------*/
 
 section h2{
     text-align: center;
     padding: 40px;
-    font-size: 40px;
-    
-    
+    font-size: 2em;
+        
 }
 section h2 span{
     background-color: cadetblue;
@@ -63,26 +61,27 @@ section h2 span{
     border-radius: 20px;
 }
 
-  
+/*-----------------carousel cell---------------------*/ 
   .carousel-cell {
     width: 78%;
-    height: 400px;
+    height: 18em;
     margin-right: 10px;
     border-radius: 5px;
-    padding: 30px;
+    padding: 3em;
     text-align: center;
-    
-}
+    }
   .carousel-cell h3{
       
       font: 1.4em "Fira Sans", sans-serif;
       font-weight: 700;
+      margin-bottom: 1em;     
       
   }
 
   .ab{
     
-    font: 22px "Fira Sans", sans-serif;
+    font: 0.7em "Fira Sans", sans-serif;
+    margin-bottom: 1em;
 }  
 
 .carousel button{
@@ -96,14 +95,20 @@ section h2 span{
     background-color: rgb(219, 233, 94);
     font-size: 20px;
     border-radius: 10px;
+    margin-top: 2em;
+    padding: .6em;
     
+}
+
+.carousel #myBtn:hover {
+    transform: scale(1.2);
 }
 
 
   #cell1{
-    background-image: url("img_avatar.png");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-image: url("image/img_avatar.png");
+    background-position: center;
+    background-repeat: no-repeat; 
     background-size:cover;
     color: lavender;
     font: italic 1.6em "Fira Sans", serif;
@@ -111,7 +116,7 @@ section h2 span{
 
   #cell2{
 
-    background-image: url("ocean.jpg");
+    background-image: url("image/ocean.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size:cover;
@@ -121,26 +126,7 @@ section h2 span{
   }
 
   #cell3{
-    background-image: url("smash-3.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size:cover;
-    color: rgb(102, 213, 228);
-    font: italic 1.6em "Fira Sans", serif;
-  }
-
-  #cell4{
-
-    background-image: url("adc.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size:cover;
-    color: rgb(92, 221, 146);
-    font: italic 1.6em "Fira Sans", serif;
-
-  }
-  #cell5{
-    background-image: url("sav.jpg");
+    background-image: url("image/smash-3.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size:cover;
@@ -148,93 +134,155 @@ section h2 span{
     font: italic 1.6em "Fira Sans", serif;
   }
 
-  section form{
-      
-      font-size: 30px;
-      text-align: center;
-      margin: 40px;
+  #cell4{
 
-  }
-  section form p{
-      
-    color: white;
-    font-family:cursive;
-
-}
-   section form{
-        background-image: url("background.jpg"); /* The image used */
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: 700px; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size:cover; /* Resize the background image to cover the entire container */
-        margin: 60px;
-
-    }
-    
-    .abcd #title1{
-        height: 40px;
-        width: 500px;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-
-    .abcd #author1{
-        height: 40px;
-        width: 500px;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-
-    .abcd #date1{
-        height: 40px;
-        width: 500px;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-
-    .abcd #content1{
-        height: 121px;
-        width: 500px;
-        text-decoration: none;
-        border-radius: 10px;
-        
-    }
-
-    .abcd #publish1{
-        background-color: rgba(215, 228, 102, 0.794);
-        font-size: 20px;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-
-   .container{
-    display: grid;
-    background-image: url("sample.jpg");
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-image: url("image/adc.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
     background-size:cover;
-    height: 500px;
-    margin: 60px;
+    color: lavender;
+    font: italic 1.6em "Fira Sans", serif;
+
+  }
+  #cell5{
+    background-image: url("image/sav.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    color: lavender;
+    font: italic 1.6em "Fira Sans", serif;
+  }
+
+  /*--------------------add a new blog---------------------*/
+  
+
+section form {
+    background-image: url("image/background.jpg");
+    background-color: #cccccc;
+    min-height: 710px;
+    max-width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 2em;
+}
+
+
+
+.abcd label {
+    color: #cccccc;
+    font-size: 1.8rem;
+    margin-bottom: 0.8em;
+    font-weight: 600;
+}
+
+.abcd_content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 2rem;
+    padding-left: 2em;
+    font-weight: 500;
+}
+
+.abcd input,
+.abcd textarea {
+    text-align: left;
+    font-size: 1.2em;
+    width: 100%;
+    border: none;
+    outline: none;
     text-decoration: none;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(200px,auto);
-    grid-auto-columns: minmax(200px,auto);
-   }
-   .item ul a{
+    border-radius: .5rem;
+    margin-bottom: 0.8em;
+}
 
-      text-decoration: none;
-      color: whitesmoke;
-      padding: 20px;
-      font-size: 30px;
-  }
+.abcd #publish1 {
+    background-color: rgba(215, 228, 102, 0.794);
+    font-size: 1.5rem;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    text-decoration: none;
+    align-self: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 0.8em;
+}
+.abcd #publish1:hover{
+    transform: scale(1.2);
+}
 
-  .item ul{
-      text-decoration: none;
-      text-align: center;
-  }
+ /* ------------------------Archive and Categories------------------------------- */
 
+.container {
+    display: grid;
+    background-image: url("image/sample.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    margin-top: 2em;
+    text-decoration: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+}
 
+#arch li,
+#categ li {
+    list-style: none;
+}
+
+.item ul a {
+    text-decoration: none;
+    color: whitesmoke;
+    /* padding: 1.2em; */
+    font-size: 2.3em;
+    
+}
+
+.item ul {
+    text-decoration: none;
+    text-align: center;
+}
+
+.item ul a:hover{
+    transform: scale(1.2);
+    color: black;
+}
+
+/*------------------footer------------------*/
+
+.footer {
+    display: flex;
+    align-content: center;
+    color: whitesmoke;
+    background-color: rgb(101, 186, 235);
+    height: 2.5em;
+    max-width: 100vw;
+}
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.menu-btn {
+    text-align: center;
+    justify-content: center;
+}
+.menu-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    
+}
  
 
 
